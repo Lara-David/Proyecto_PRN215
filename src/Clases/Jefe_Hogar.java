@@ -9,16 +9,10 @@ package Clases;
  *
  * @author luisd
  */
-public class Usuario {
+public class Jefe_Hogar {
     //Atributos de la Clase
-    String nombres, apellidos, idUsuario, contrasenia;
-    int edad, telefono, numRegistro;
+     String nombre, apellidos;
+    int edad, dui, numVivienda, numZonaRecidencial;
     
-    ////Metodos de la Clase
-    public void crearNuevoUsuario()
-    {
-        Usuario Usuario1=new Usuario();
-
-    }
-    
+    //Metodos de la Clase
 }
