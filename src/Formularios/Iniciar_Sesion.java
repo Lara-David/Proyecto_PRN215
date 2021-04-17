@@ -16,6 +16,8 @@ public class Iniciar_Sesion extends javax.swing.JFrame {
      */
     public Iniciar_Sesion() {
         initComponents();
+        //Coloca el formulario emergente al centro de la pantalla.
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -36,6 +38,7 @@ public class Iniciar_Sesion extends javax.swing.JFrame {
         txtContrasenia = new javax.swing.JPasswordField();
         txtUsuario = new javax.swing.JTextField();
         btnIngresar = new javax.swing.JButton();
+        bntSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -91,6 +94,14 @@ public class Iniciar_Sesion extends javax.swing.JFrame {
             }
         });
 
+        bntSalir.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        bntSalir.setText("Salir");
+        bntSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntSalirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -109,7 +120,9 @@ public class Iniciar_Sesion extends javax.swing.JFrame {
                     .addComponent(txtContrasenia)
                     .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(108, 108, 108)
-                .addComponent(btnIngresar)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnIngresar)
+                    .addComponent(bntSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(79, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -121,11 +134,12 @@ public class Iniciar_Sesion extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45)
+                .addGap(49, 49, 49)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(txtContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(76, Short.MAX_VALUE))
+                    .addComponent(txtContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bntSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -155,6 +169,10 @@ public class Iniciar_Sesion extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_btnIngresarMouseClicked
+    //Boton Salir
+    private void bntSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntSalirActionPerformed
+        
+    }//GEN-LAST:event_bntSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -192,6 +210,7 @@ public class Iniciar_Sesion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bntSalir;
     private javax.swing.JButton btnIngresar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
